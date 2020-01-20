@@ -26,11 +26,20 @@ clist = [
 
 #Lists
 
-class Converter:
-    async def convert(self, ctx, argument):
-        raise NotImplementedError('Derived classes need to implement this.')
+class CustomMember(commands.Converter):
+	"""Wrapper for discord.Member converter with a different error message."""
+	async def convert(self, ctx, value):
+		try:
+			converter = MemberConverter()
+			result = await converter.convert(ctx, value)
+		except commands.BadArgument:
+			raise commands.BadArgument(
+				'Syntax error, see example below:\n'
+				'`{p}quote add "This is an example quote." @user`'.format(p=ctx.prefix)
+			)
+		return result
 
-class uwu(commands.Cog,):
+class uwu(commands.Cog):
     def __init__(self, bot):
         self.pat_gif = pat_gif
         #Gifs
