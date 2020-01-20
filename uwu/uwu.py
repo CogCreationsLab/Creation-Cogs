@@ -52,6 +52,7 @@ class uwu(commands.Cog, IDConverter):
 
     @commands.command()
     async def pat(self, ctx, member: discord.Member):
+        auth = ctx.author
         msg = rand(self.pat_msg)
         if member == ctx.author:
             return await ctx.send("Test")
