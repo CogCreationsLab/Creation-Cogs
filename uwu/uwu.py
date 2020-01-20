@@ -53,7 +53,7 @@ class uwu(commands.Cog, IDConverter):
     @commands.command()
     async def pat(self, ctx, member: discord.Member):
         msg = rand(self.pat_msg)
-        if user == ctx.author:
+        if member == ctx.author:
             return await ctx.send("Test")
         else:
             patbed = discord.Embed(color=discord.Color(rand(self.clist)))
