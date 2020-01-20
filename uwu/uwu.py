@@ -30,16 +30,7 @@ class Converter:
     async def convert(self, ctx, argument):
         raise NotImplementedError('Derived classes need to implement this.')
 
-class IDConverter(Converter):
-    def __init__(self):
-        self._id_regex = re.compile(r'([0-9]{15,21})$')
-        super().__init__()
-
-    def _get_id_match(self, argument):
-        return self._id_regex.match(argument)
-
-
-class uwu(commands.Cog, IDConverter):
+class uwu(commands.Cog,):
     def __init__(self, bot):
         self.pat_gif = pat_gif
         #Gifs
