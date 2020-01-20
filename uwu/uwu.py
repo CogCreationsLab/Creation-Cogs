@@ -11,8 +11,8 @@ import time
 from random import choice as rand
 #General Imports
 
-from .messages import pat_msg
-from .gifs import pat_gif
+from .messages import pat_msg, excited_gif
+from .gifs import pat_gif, excited_gif
 #Sour
 # ce Imports
 clist = [
@@ -29,11 +29,17 @@ clist = [
 class uwu(commands.Cog):
     def __init__(self, bot):
         self.pat_gif = pat_gif
+        self.excited_gif = excited_gif
         #Gifs
 
         self.pat_msg = pat_msg
+        self.excited_msg = excited_msg
         #Messages
-
+        
+        self.selfpat_msg = self_pat_msg
+        self.excited_msg = self_excited_msg
+        #Self Messages
+        
         self.clist = clist
         #Others
 
@@ -41,15 +47,30 @@ class uwu(commands.Cog):
     async def pat(self, ctx, member: discord.Member):
         auth = ctx.author
         msg = rand(self.pat_msg)
+        self_msg = rand(self.selfpat_msg)
         if member == ctx.author:
-            return await ctx.send("Test")
+            return await ctx.send(self_msg)
         else:
             patbed = discord.Embed(color=discord.Color(rand(self.clist)))
             patbed.set_image(url=rand(self.pat_gif))
             patbed.set_author(name=msg.format(mem=member.display_name, auth=auth.display_name), icon_url=ctx.author.avatar_url)
             await ctx.send(embed=patbed)
-        #Message Sending
-
+        #Pat Command
+    
+    @commands.command()
+    async def excited(self, ctx, member: discord.Member):
+        auth = ctx.author
+        msg = rand(self.excited_msg)
+        self_msg = rand(self.selfexcited_msg)
+        if member == ctx.author:
+            return await ctx.send(self_msg)
+        else:
+            excitedbed = discord.Embed(color=discord.Color(rand(self.clist)))
+            excitedbed.set_image(url=rand(self.excited_gif))
+            excitedbed.set_author(name=msg.format(mem=member.display_name, auth=auth.display_name), icon_url=ctx.author.avatar_url)
+            await ctx.send(embed=excitedbed)
+        #Pat Command     
+            
 #################
 #Commands To Add#
 ################
