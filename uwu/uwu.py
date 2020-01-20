@@ -254,7 +254,8 @@ class uwu(commands.Cog, IDConverter):
         if member == ctx.author:
             return await ctx.send("A-are you feeling lonely? ;c")
         else:
-            patbed = discord.Embed(description=msg.format(mem=member.mention, auth=auth.display_name), color=discord.Color(rand(self.clist)))
+            patbed = discord.Embed(color=discord.Color(rand(self.clist)))
+            embed.set_author(name=msg.format, mem-member.display_name, auth=auth.display_name, icon_url=ctx.author.avatar_url)
             patbed.set_image(url=rand(self.patg))
             await ctx.send(embed=patbed)
         #Message Sending
