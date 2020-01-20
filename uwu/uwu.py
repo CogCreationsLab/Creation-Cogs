@@ -26,19 +26,6 @@ clist = [
 
 #Lists
 
-class CustomMember(commands.Converter):
-	"""Wrapper for discord.Member converter with a different error message."""
-	async def convert(self, ctx, value):
-		try:
-			converter = MemberConverter()
-			result = await converter.convert(ctx, value)
-		except commands.BadArgument:
-			raise commands.BadArgument(
-				'Syntax error, see example below:\n'
-				'`{p}quote add "This is an example quote." @user`'.format(p=ctx.prefix)
-			)
-		return result
-
 class uwu(commands.Cog):
     def __init__(self, bot):
         self.pat_gif = pat_gif
@@ -63,10 +50,9 @@ class uwu(commands.Cog):
             await ctx.send(embed=patbed)
         #Message Sending
 
-#Class
-###################
-#Finished Commands#
-###################
+#################
+#Commands To Add#
+################
 # -Smile
 # -Pat
 # -Poke
@@ -74,10 +60,6 @@ class uwu(commands.Cog):
 # -Lick
 # -Kill
 # -Punch
-
-#################
-#Commands To Add#
-################
 # -Happy
 # -Excited
 # -Cuddle
