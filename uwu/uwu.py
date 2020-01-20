@@ -42,21 +42,9 @@ class IDConverter(Converter):
 class uwu(commands.Cog, IDConverter):
     def __init__(self, bot):
         self.pat_gif = pat_gif
-        self.kiss_gif = kiss_gif
-        self.smile_gif = smile_gif
-        self.poke_gif = poke_gif
-        self.lick_gif = lick_gif
-        self.kill_gif = kill_gif
-        self.punch_gif = punch_gif
         #Gifs
 
         self.pat_msg = pat_msg
-        self.kiss_msg = kiss_msg
-        self.smile_msg = smile_msg
-        self.poke_msg = poke_msg
-        self.lick_msg = lick_msg
-        self.kill_msg = kill_msg
-        self.punch_msg = punch_msg
         #Messages
 
         self.clist = clist
