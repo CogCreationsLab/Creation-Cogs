@@ -29,14 +29,15 @@ clist = [
 class uwu(commands.Cog):
     def __init__(self, bot):
         self.pat_gif = pat_gif
-        self.excited_gif = excited_gif
+        self.cuddle_gif = cuddle_gif
         #Gifs
 
         self.pat_msg = pat_msg
-        self.excited_msg = excited_msg
+        self.cuddle_msg = cuddle_msg
         #Messages
         
         self.selfpat_msg = self_pat_msg
+        self.selfcuddle_msg = self_cuddle_msg
         #Self Messages
         
         self.clist = clist
@@ -57,15 +58,17 @@ class uwu(commands.Cog):
         #Pat Command
     
     @commands.command()
-    async def excited(self, ctx, member: discord.Member):
+    async def cuddle(self, ctx, member: discord.Member):
         auth = ctx.author
-        msg = rand(self.excited_msg)
+        msg = rand(self.cuddle_msg)
+        self_msg = rand(self.selfcuddle_msg)
         if member == ctx.author:
-              ctx.send(
-                excitedbed = discord.Embed(color=discord.Color(rand(self.clist)))
-                excitedbed.set_image(url=rand(self.excited_gif))
-                excitedbed.set_author(name=msg.format(auth=auth.display_name), icon_url=ctx.author.avatar_url)
-                await ctx.send(embed=excitedbed)
+            return await ctx.send(self_msg)
+        else:
+            cuddlebed = discord.Embed(color=discord.Color(rand(self.clist)))
+            cuddlebed.set_image(url=rand(self.cuddle_gif))
+            cuddlebed.set_author(name=msg.format(mem=member.display_name, auth=auth.display_name), icon_url=ctx.author.avatar_url)
+            await ctx.send(embed=cuddlebed)
         #Excited Command     
             
 #################
