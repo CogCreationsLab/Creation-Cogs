@@ -33,11 +33,13 @@ class uwu(commands.Cog):
         self.pat_gif = pat_gif
         self.cuddle_gif = cuddle_gif
         self.slap_gif = slap_gif
+        self.excited_gif = excited_gif
         #Gifs
 
         self.pat_msg = pat_msg
         self.cuddle_msg = cuddle_msg
         self.slap_msg = slap_msg
+        self.excited_msg = excited_msg
         #Messages
         
         self.selfpat_msg = self_pat_msg
@@ -48,6 +50,10 @@ class uwu(commands.Cog):
         self.clist = clist
         #Others
 
+#################        
+#Action Commands        
+#################        
+        
     @commands.command()
     async def pat(self, ctx, member: discord.Member):
         auth = ctx.author
@@ -88,8 +94,22 @@ class uwu(commands.Cog):
             slapbed.set_image(url=rand(self.slap_gif))
             slapbed.set_author(name=msg.format(mem=member.display_name, auth=auth.display_name), icon_url=ctx.author.avatar_url)
             await ctx.send(embed=slapbed)
-        #Excited Command          
-            
+        #Slap Command
+        
+#################        
+#Emote Commands        
+#################
+
+ @commands.command()
+    async def excited(self, ctx, member: discord.Member):
+        auth = ctx.author
+        msg = rand(self.excited_msg)
+        if member == ctx.author:
+            return await ctx.send(
+             excitedbed = discord.Embed(set_author(name=msg.format(auth=auth.display_name), icon_url=ctx.author.avatar_url), color=discord.Color(rand(self.clist))))
+             excitedbed.set_image(url=rand(self.excited_gif))
+            await ctx.send(embed=excitedbed)
+
 #################
 #Commands To Add#
 ################
