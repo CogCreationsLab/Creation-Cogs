@@ -11,7 +11,7 @@ import time
 from random import choice as rand
 #General Imports
 
-from .messages import pat_msg, cuddle_msg
+from .messages import pat_msg, self_pat_msg, cuddle_msg, self_cuddle_msg
 from .gifs import pat_gif, cuddle_gif
 #Sour
 # ce Imports
