@@ -17,5 +17,5 @@ cuddle_msg = [
 
 self_cuddle_msg = [
     "D-do you need a hug {auth}...?"
-    "oh noo ;-; I'll cuddle you {auth}...
+    "oh noo ;-; I'll cuddle you {auth}..."
 
