@@ -100,7 +100,7 @@ class uwu(commands.Cog):
 #Emote Commands        
 #################
 
- @commands.command()
+    @commands.command()
     async def excited(self, ctx, member: discord.Member):
         auth = ctx.author
         msg = rand(self.excited_msg)
