@@ -11,7 +11,7 @@ import time
 from random import choice as rand
 #General Imports
 
-from .messages import pat_msg, excited_gif
+from .messages import pat_msg, excited_msg
 from .gifs import pat_gif, excited_gif
 #Sour
 # ce Imports
@@ -62,9 +62,9 @@ class uwu(commands.Cog):
         msg = rand(self.excited_msg)
         if member == ctx.author:
             return await ctx.send(
-            excitebed = discord.Embed(color=discord.Color(rand(self.clist)))
-            excitebed.set_image(url=rand(self.excited_gif))
-            excitebed.set_author(name=msg.format(auth=auth.display_name), icon_url=ctx.author.avatar_url)
+            excitedbed = discord.Embed(color=discord.Color(rand(self.clist)))
+            excitedbed.set_image(url=rand(self.excited_gif))
+            excitedbed.set_author(name=msg.format(auth=auth.display_name), icon_url=ctx.author.avatar_url)
             await ctx.send(embed=excitebed)
         #Excited Command     
             
