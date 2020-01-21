@@ -1,3 +1,7 @@
+#################        
+#Action Gifs        
+################# 
+
 pat_gif = [
     "https://i.imgur.com/YTGnx49.gif",
     "https://i.imgur.com/U37wHs9.gif",
@@ -59,4 +63,12 @@ slap_gif = [
     "https://i.imgur.com/nW1GBnE.gif",
     "https://i.imgur.com/GngODIX.gif",
     "https://i.imgur.com/MnDJQ3y.gif",
+]
+
+#################        
+#Emote Gifs        
+################# 
+
+excited_gif = [
+    "https://i.imgur.com/vpslUHN.gif"
 ]
