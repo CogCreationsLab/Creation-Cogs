@@ -20,5 +20,5 @@ pat_gif = [
 ]
 
 cuddle_gif = [
-    "https://media.giphy.com/media/3NnnS6Q8hVPZC/giphy.gif"
+    "https://media.giphy.com/media/n4iweVTNXZPOM/giphy.gif"
 ]
