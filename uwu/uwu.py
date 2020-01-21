@@ -47,7 +47,7 @@ class uwu(commands.Cog):
     async def pat(self, ctx, member: discord.Member):
         auth = ctx.author
         msg = rand(self.pat_msg)
-        self_msg = rand(self.selfpat_msg.format(auth=auth.display_name)
+        self_msg = rand(self.selfpat_msg.format(auth=auth.display_name))
         if member == ctx.author:
             return await ctx.send(self_msg)
         else:
@@ -61,7 +61,7 @@ class uwu(commands.Cog):
     async def cuddle(self, ctx, member: discord.Member):
         auth = ctx.author
         msg = rand(self.cuddle_msg)
-        self_msg = rand(self.selfcuddle_msg.format(auth=auth.display_name)
+        self_msg = rand(self.selfcuddle_msg.format(auth=auth.display_name))
         if member == ctx.author:
             return await ctx.send(self_msg)
         else:
