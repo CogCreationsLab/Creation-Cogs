@@ -62,10 +62,10 @@ class uwu(commands.Cog):
         msg = rand(self.excited_msg)
         if member == ctx.author:
             return await ctx.send(
-            excitedbed = discord.Embed(color=discord.Color(rand(self.clist)))
-            excitedbed.set_image(url=rand(self.excited_gif))
-            excitedbed.set_author(name=msg.format(auth=auth.display_name), icon_url=ctx.author.avatar_url)
-            await ctx.send(embed=excitedbed)
+                excitedbed = discord.Embed(color=discord.Color(rand(self.clist)))
+                excitedbed.set_image(url=rand(self.excited_gif))
+                excitedbed.set_author(name=msg.format(auth=auth.display_name), icon_url=ctx.author.avatar_url)
+                await ctx.send(embed=excitedbed)
         #Excited Command     
             
 #################
