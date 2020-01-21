@@ -6,16 +6,16 @@ pat_msg = [
 ]
 
 self_pat_msg = [
-    "oh noo ;-; I'll pat you {auth}..."
+    "oh noo ;-; I'll pat you {auth}...",
     "There there {auth}..."
 ]
 
 cuddle_msg = [
-    "{auth} cuddles {mem}~ adorable!"
+    "{auth} cuddles {mem}~ adorable!",
     "{auth} cuddles {mem}~~ kyaaaa!!"
 ]
 
 self_cuddle_msg = [
-    "D-do you need a hug {auth}...?"
+    "D-do you need a hug {auth}...?",
     "oh noo ;-; I'll cuddle you {auth}..."
 ]
