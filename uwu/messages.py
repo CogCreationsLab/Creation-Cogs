@@ -21,12 +21,12 @@ self_cuddle_msg = [
 ]
 
 slap_msg = [
-    "{auth} slaps {mem}!! Deserves it!"
-    "{auth} slaps {mem}!! oof."
-    "{auth} slaps {mem}!! That looks like it hurt..."
+    "{auth} slaps {mem}!! Deserves it!",
+    "{auth} slaps {mem}!! oof.",
+    "{auth} slaps {mem}!! That looks like it hurt...",
 ]
     
 self_slap_msg = [
-    "Don't do that to yourself, {auth}!"
+    "Don't do that to yourself, {auth}!",
     "Did you... slap yourself, {auth}?? :c"
 ]
