@@ -11,10 +11,13 @@ import time
 from random import choice as rand
 #General Imports
 
-from .messages import pat_msg, self_pat_msg, cuddle_msg, self_cuddle_msg
-from .gifs import pat_gif, cuddle_gif
-#Sour
-# ce Imports
+from .messages import pat_msg, self_pat_msg, 
+                      cuddle_msg, self_cuddle_msg, 
+                      slap_msg, self_slap_msg
+
+from .gifs import pat_gif, cuddle_gif, slap_gif
+#Source Imports
+
 clist = [
     0xeb4034,
     0x75f6ff,
@@ -30,14 +33,17 @@ class uwu(commands.Cog):
     def __init__(self, bot):
         self.pat_gif = pat_gif
         self.cuddle_gif = cuddle_gif
+        self.slap_gif = slap_gif
         #Gifs
 
         self.pat_msg = pat_msg
         self.cuddle_msg = cuddle_msg
+        self.cuddle_msg = slap_msg
         #Messages
         
         self.selfpat_msg = self_pat_msg
         self.selfcuddle_msg = self_cuddle_msg
+        self.selfslap_msg = self_slap_msg
         #Self Messages
         
         self.clist = clist
@@ -69,7 +75,21 @@ class uwu(commands.Cog):
             cuddlebed.set_image(url=rand(self.cuddle_gif))
             cuddlebed.set_author(name=msg.format(mem=member.display_name, auth=auth.display_name), icon_url=ctx.author.avatar_url)
             await ctx.send(embed=cuddlebed)
-        #Excited Command     
+        #Cuddle Command     
+        
+    @commands.command()
+    async def slap(self, ctx, member: discord.Member):
+        auth = ctx.author
+        msg = rand(self.slap_msg)
+        self_msg = rand(self.selfslap_msg)
+        if member == ctx.author:
+            return await ctx.send(self_msg.format(auth=auth.display_name))
+        else:
+            slapbed = discord.Embed(color=discord.Color(rand(self.clist)))
+            slapbed.set_image(url=rand(self.slap_gif))
+            slapbed.set_author(name=msg.format(mem=member.display_name, auth=auth.display_name), icon_url=ctx.author.avatar_url)
+            await ctx.send(embed=slapbed)
+        #Excited Command          
             
 #################
 #Commands To Add#
