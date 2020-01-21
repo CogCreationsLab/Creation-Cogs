@@ -47,9 +47,9 @@ class uwu(commands.Cog):
     async def pat(self, ctx, member: discord.Member):
         auth = ctx.author
         msg = rand(self.pat_msg)
-        self_msg = rand(self.selfpat_msg)
+        self_msg = rand(self.selfpat_msg.format(auth=auth.display_name)
         if member == ctx.author:
-            return await ctx.send(self_msg.format(auth=auth.display_name)
+            return await ctx.send(self_msg)
         else:
             patbed = discord.Embed(color=discord.Color(rand(self.clist)))
             patbed.set_image(url=rand(self.pat_gif))
@@ -61,9 +61,9 @@ class uwu(commands.Cog):
     async def cuddle(self, ctx, member: discord.Member):
         auth = ctx.author
         msg = rand(self.cuddle_msg)
-        self_msg = rand(self.selfcuddle_msg)
+        self_msg = rand(self.selfcuddle_msg.format(auth=auth.display_name)
         if member == ctx.author:
-            return await ctx.send(self_msg.format(auth=auth.display_name)
+            return await ctx.send(self_msg)
         else:
             cuddlebed = discord.Embed(color=discord.Color(rand(self.clist)))
             cuddlebed.set_image(url=rand(self.cuddle_gif))
