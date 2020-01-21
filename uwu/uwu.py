@@ -37,7 +37,7 @@ class uwu(commands.Cog):
 
         self.pat_msg = pat_msg
         self.cuddle_msg = cuddle_msg
-        self.cuddle_msg = slap_msg
+        self.slap_msg = slap_msg
         #Messages
         
         self.selfpat_msg = self_pat_msg
