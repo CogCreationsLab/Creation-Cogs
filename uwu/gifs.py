@@ -18,3 +18,7 @@ pat_gif = [
     "https://i.imgur.com/4WJRAGw.gif",
     "https://i.imgur.com/v1sSh5r.gif"
 ]
+
+excited_gif = [
+    "https://giphy.com/gifs/happy-excited-3NnnS6Q8hVPZC"
+]
