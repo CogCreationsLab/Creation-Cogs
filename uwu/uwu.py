@@ -11,8 +11,8 @@ import time
 from random import choice as rand
 #General Imports
 
-from .messages import pat_msg, excited_msg
-from .gifs import pat_gif, excited_gif
+from .messages import pat_msg, cuddle_msg
+from .gifs import pat_gif, cuddle_gif
 #Sour
 # ce Imports
 clist = [
