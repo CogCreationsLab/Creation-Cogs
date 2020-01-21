@@ -39,3 +39,7 @@ cuddle_gif = [
     "https://i.imgur.com/NFl6seR.gif",
     "https://i.imgur.com/kziYCwK.gif",
 ]
+
+slap_gif = [
+    "https://i.imgur.com/Z6L2POK.gif"
+]
