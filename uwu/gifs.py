@@ -20,5 +20,22 @@ pat_gif = [
 ]
 
 cuddle_gif = [
-    "https://media.giphy.com/media/n4iweVTNXZPOM/giphy.gif"
+    "https://i.imgur.com/oq2T71A.gif",
+    "https://i.imgur.com/rGx3FlE.gif",
+    "https://i.imgur.com/kVue3KD.gif",
+    "https://i.imgur.com/7TIwtVb.gif",
+    "https://i.imgur.com/NbnZTUG.gif",
+    "https://i.imgur.com/W1Ezvu8.gif",
+    "https://i.imgur.com/ioCnyOc.gif",
+    "https://i.imgur.com/xa4Fj4D.gif",
+    "https://i.imgur.com/VkeMvSp.gif",
+    "https://i.imgur.com/fns5zo1.gif",
+    "https://i.imgur.com/ZWSPB64.gif",
+    "https://i.imgur.com/iqISEnN.gif",
+    "https://i.imgur.com/ycipvkm.gif",
+    "https://i.imgur.com/dJIlDqF.gif",
+    "https://i.imgur.com/BXi71uV.gif",
+    "https://i.imgur.com/OXTb8sb.gif",
+    "https://i.imgur.com/NFl6seR.gif",
+    "https://i.imgur.com/kziYCwK.gif",
 ]
