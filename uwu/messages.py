@@ -1,3 +1,7 @@
+#################        
+#Action Messages        
+################# 
+
 pat_msg = [
     "{auth} pats {mem} on the head ^-^",
     "{auth} pattie cakes {mem}s head 0-0",
@@ -29,4 +33,12 @@ slap_msg = [
 self_slap_msg = [
     "Don't do that to yourself, {auth}!",
     "Did you... slap yourself, {auth}?? :c"
+]
+
+#################        
+#Emote Messages        
+################# 
+
+excited_msg = [
+    "{auth} is Excited!"
 ]
