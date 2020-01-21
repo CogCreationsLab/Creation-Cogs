@@ -20,5 +20,5 @@ pat_gif = [
 ]
 
 excited_gif = [
-    "https://giphy.com/gifs/happy-excited-3NnnS6Q8hVPZC.gif"
+    "https://media.giphy.com/media/3NnnS6Q8hVPZC/giphy.gif"
 ]
