@@ -37,7 +37,6 @@ class uwu(commands.Cog):
         #Messages
         
         self.selfpat_msg = self_pat_msg
-        self.excited_msg = self_excited_msg
         #Self Messages
         
         self.clist = clist
@@ -63,13 +62,12 @@ class uwu(commands.Cog):
         msg = rand(self.excited_msg)
         self_msg = rand(self.selfexcited_msg)
         if member == ctx.author:
-            return await ctx.send(self_msg)
-        else:
+            return await ctx.send:
             excitedbed = discord.Embed(color=discord.Color(rand(self.clist)))
             excitedbed.set_image(url=rand(self.excited_gif))
             excitedbed.set_author(name=msg.format(auth=auth.display_name), icon_url=ctx.author.avatar_url)
             await ctx.send(embed=excitedbed)
-        #Pat Command     
+        #Excited Command     
             
 #################
 #Commands To Add#
