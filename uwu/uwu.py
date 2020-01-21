@@ -15,7 +15,11 @@ from .messages import pat_msg, self_pat_msg
 from .messages import cuddle_msg, self_cuddle_msg
 from .messages import slap_msg, self_slap_msg
 from .gifs import pat_gif, cuddle_gif, slap_gif
-#Source Imports
+#Action Imports
+
+from .messages import excited_msg
+from .gifs import excited_gif
+#Emote Imports
 
 clist = [
     0xeb4034,
