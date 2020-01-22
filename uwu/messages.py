@@ -41,5 +41,6 @@ self_slap_msg = [
 ################# 
 
 excited_msg = [
-    "{auth} is Excited!"
+    "{auth} is Excited!",
+    "{auth} is jumping in Excitement!"
 ]
