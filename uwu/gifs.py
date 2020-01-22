@@ -41,7 +41,7 @@ cuddle_gif = [
     "https://i.imgur.com/BXi71uV.gif",
     "https://i.imgur.com/OXTb8sb.gif",
     "https://i.imgur.com/NFl6seR.gif",
-    "https://i.imgur.com/kziYCwK.gif",
+    "https://i.imgur.com/kziYCwK.gif"
 ]
 
 slap_gif = [
@@ -62,7 +62,7 @@ slap_gif = [
     "https://i.imgur.com/WiKj2f5.gif",
     "https://i.imgur.com/nW1GBnE.gif",
     "https://i.imgur.com/GngODIX.gif",
-    "https://i.imgur.com/MnDJQ3y.gif",
+    "https://i.imgur.com/MnDJQ3y.gif"
 ]
 
 #################        
@@ -70,5 +70,22 @@ slap_gif = [
 ################# 
 
 excited_gif = [
-    "https://i.imgur.com/PCaTgpy.gif"
+    "https://i.imgur.com/PCaTgpy.gif",
+    "https://i.imgur.com/mrwXedz.gif",
+    "https://i.imgur.com/Kbn5aGb.gif",
+    "https://i.imgur.com/5IkhrpL.gif",
+    "https://i.imgur.com/Zzswn3a.gif",
+    "https://i.imgur.com/7Fsy8zg.gif",
+    "https://i.imgur.com/G9QlyWB.gif",
+    "https://i.imgur.com/eRMyz17.gif",
+    "https://i.imgur.com/RWaDdKn.gif",
+    "https://i.imgur.com/XylwbnY.gif",
+    "https://i.imgur.com/slGMmZ5.gif",
+    "https://i.imgur.com/4ZXQLwX.gif",
+    "https://i.imgur.com/tXA35UF.gif",
+    "https://i.imgur.com/7AQJ9Zg.gif",
+    "https://i.imgur.com/jJKhfe6.gif",
+    "https://i.imgur.com/3EtoloD.gif",
+    "",
+    ""
 ]
