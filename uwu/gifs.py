@@ -86,6 +86,6 @@ excited_gif = [
     "https://i.imgur.com/7AQJ9Zg.gif",
     "https://i.imgur.com/jJKhfe6.gif",
     "https://i.imgur.com/3EtoloD.gif",
-    "",
-    ""
+    "https://i.imgur.com/kaujCoX.gif",
+    "https://i.imgur.com/jiQCMNM.gif"
 ]
