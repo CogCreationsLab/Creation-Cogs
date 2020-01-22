@@ -114,7 +114,7 @@ class uwu(commands.Cog):
 #################
 
     @commands.command()
-    async def excited(self, ctx):
+    async def excited():
         auth = ctx.author
         msg = rand(self.excited_msg)
             
