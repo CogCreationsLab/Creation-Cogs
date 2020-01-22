@@ -117,12 +117,11 @@ class uwu(commands.Cog):
     async def excited():
         auth = ctx.author
         msg = rand(self.excited_msg)
-        ctx.send( 
-        excitedbed = discord.Embed(
-        color=discord.Color(rand(self.clist)))
+        excitedbed = discord.Embed(color=discord.Color(rand(self.clist)))
             
         excitedbed.set_image(url=rand(self.excited_gif))
         excitedbed.set_author(name=msg.format(auth=auth.display_name), icon_url=ctx.author.avatar_url)
+        
         await ctx.send(embed=excitedbed)
 
 #################
