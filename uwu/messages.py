@@ -16,7 +16,8 @@ self_pat_msg = [
 
 cuddle_msg = [
     "{auth} cuddles {mem}~ adorable!",
-    "{auth} cuddles {mem}~~ kyaaaa!!"
+    "{auth} cuddles {mem}~~ kyaaaa!!",
+    "{auth} snuggles {mem}~ cute!"
 ]
 
 self_cuddle_msg = [
