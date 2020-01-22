@@ -29,8 +29,7 @@ clist = [
     0xdaff61,
     0xff9245
 ]
-
-#Lists
+#Color List
 
 class uwu(commands.Cog):
     def __init__(self, bot):
@@ -125,7 +124,8 @@ class uwu(commands.Cog):
         
         await ctx.send(embed=excitedbed)
         
-        
+
+################        
 #Commands To Add#
 ################
 # -Smile
