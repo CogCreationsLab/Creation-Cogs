@@ -129,18 +129,18 @@ class uwu(commands.Cog):
 #Commands To Add#
 ################
 # -Smile
-# -Pat
+# -Pat -Done
 # -Poke
 # -Kiss
 # -Lick
 # -Kill
 # -Punch
 # -Happy
-# -Excited
-# -Cuddle
+# -Excited -Done
+# -Cuddle -Done
 # -Insult
 # -Nom
-# -Slap
+# -Slap -Done
 # -Stare
 # -Highfive
 # -Bite
