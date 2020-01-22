@@ -114,9 +114,10 @@ class uwu(commands.Cog):
 #################
 
     @commands.command()
-    async def excited(self, ctx):
+    async def excited(self, ctx, member):
         auth = ctx.author
         msg = rand(self.excited_msg)
+        
         excitedbed = discord.Embed(color=discord.Color(rand(self.clist)))
             
         excitedbed.set_image(url=rand(self.excited_gif))
