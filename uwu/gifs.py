@@ -70,5 +70,5 @@ slap_gif = [
 ################# 
 
 excited_gif = [
-    "https://i.imgur.com/vpslUHN.gif"
+    "https://i.imgur.com/PCaTgpy.gif"
 ]
