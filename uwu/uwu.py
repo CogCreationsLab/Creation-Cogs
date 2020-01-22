@@ -63,12 +63,15 @@ class uwu(commands.Cog):
         auth = ctx.author
         msg = rand(self.pat_msg)
         self_msg = rand(self.selfpat_msg)
+        
         if member == ctx.author:
             return await ctx.send(self_msg.format(auth=auth.display_name))
+        
         else:
             patbed = discord.Embed(color=discord.Color(rand(self.clist)))
             patbed.set_image(url=rand(self.pat_gif))
             patbed.set_author(name=msg.format(mem=member.display_name, auth=auth.display_name), icon_url=ctx.author.avatar_url)
+            
             await ctx.send(embed=patbed)
         #Pat Command
     
@@ -77,12 +80,15 @@ class uwu(commands.Cog):
         auth = ctx.author
         msg = rand(self.cuddle_msg)
         self_msg = rand(self.selfcuddle_msg)
+        
         if member == ctx.author:
             return await ctx.send(self_msg.format(auth=auth.display_name))
+        
         else:
             cuddlebed = discord.Embed(color=discord.Color(rand(self.clist)))
             cuddlebed.set_image(url=rand(self.cuddle_gif))
             cuddlebed.set_author(name=msg.format(mem=member.display_name, auth=auth.display_name), icon_url=ctx.author.avatar_url)
+            
             await ctx.send(embed=cuddlebed)
         #Cuddle Command     
         
@@ -91,12 +97,15 @@ class uwu(commands.Cog):
         auth = ctx.author
         msg = rand(self.slap_msg)
         self_msg = rand(self.selfslap_msg)
+        
         if member == ctx.author:
             return await ctx.send(self_msg.format(auth=auth.display_name))
+        
         else:
             slapbed = discord.Embed(color=discord.Color(rand(self.clist)))
             slapbed.set_image(url=rand(self.slap_gif))
             slapbed.set_author(name=msg.format(mem=member.display_name, auth=auth.display_name), icon_url=ctx.author.avatar_url)
+            
             await ctx.send(embed=slapbed)
         #Slap Command
         
@@ -108,10 +117,10 @@ class uwu(commands.Cog):
     async def excited(self, ctx, member: discord.Member):
         auth = ctx.author
         msg = rand(self.excited_msg)
-        if member == ctx.author:
-            return await ctx.send(
+            
             excitedbed = discord.Embed(set_author(name=msg.format(auth=auth.display_name), icon_url=ctx.author.avatar_url), color=discord.Color(rand(self.clist))))
             excitedbed.set_image(url=rand(self.excited_gif))
+            
             await ctx.send(embed=excitedbed)
 
 #################
