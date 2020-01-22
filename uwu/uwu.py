@@ -114,17 +114,15 @@ class uwu(commands.Cog):
 #################
 
     @commands.command()
-    async def excited(self, ctx):
+    async def excited(self, ctx, member: discord.Member):
         auth = ctx.author
         msg = rand(self.excited_msg)
-        
-        excitedbed = discord.Embed(color=discord.Color(rand(self.clist)))
+        if member == ctx.author:
+            return await ctx.send(
+              excitedbed = discord.Embed(name=msg.format(auth=auth.display_name), icon_url=ctx.author.avatar_url), color=discord.Color(rand(self.clist))))
+              excitedbed.set_image(url=rand(self.excited_gif))
             
-        excitedbed.set_image(url=rand(self.excited_gif))
-        excitedbed.set_author(name=msg.format(auth=auth.display_name), icon_url=ctx.author.avatar_url)
-        
-        await ctx.send(embed=excitedbed)
-
+            await ctx.send(embed=excitedbed)
 #################
 #Commands To Add#
 ################
