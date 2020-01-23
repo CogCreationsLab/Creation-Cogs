@@ -54,7 +54,7 @@ bang_msg = [
     
 self_bang_msg = [
     "Don't do that to yourself, {auth}!",
-    "W-why would you shoot yourself {auth}?
+    "W-why would you shoot yourself {auth}?"
 ]
 
 #################        
