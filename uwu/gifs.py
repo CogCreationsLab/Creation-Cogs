@@ -69,6 +69,10 @@ wave_gif = [
     "https://i.imgur.com/UX2DyJ1.gif"
 ]
 
+bang_gif = [
+    "https://i.imgur.com/e1Px88O.gif"
+]
+
 #################        
 #Emote Gifs        
 ################# 
