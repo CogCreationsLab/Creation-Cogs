@@ -112,7 +112,7 @@ class uwu(commands.Cog):
         #Slap Command
         
     @commands.command()
-    async def slap(self, ctx, member: discord.Member):
+    async def wave(self, ctx, member: discord.Member):
         auth = ctx.author
         msg = rand(self.wave_msg)
         self_msg = rand(self.selfwave_msg)
@@ -126,7 +126,7 @@ class uwu(commands.Cog):
             slapbed.set_author(name=msg.format(mem=member.display_name, auth=auth.display_name), icon_url=ctx.author.avatar_url)
             
             await ctx.send(embed=slapbed)
-        #Slap Command
+        #Wave Command
         
 #################        
 #Emote Commands        
