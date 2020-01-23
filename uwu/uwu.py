@@ -134,7 +134,7 @@ class uwu(commands.Cog):
         #Wave Command
     
     @commands.command()
-    async def wave(self, ctx, member: discord.Member):
+    async def bang(self, ctx, member: discord.Member):
         auth = ctx.author
         msg = rand(self.bang_msg)
         self_msg = rand(self.selfbang_msg)
