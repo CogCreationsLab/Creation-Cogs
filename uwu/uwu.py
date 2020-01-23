@@ -14,7 +14,8 @@ from random import choice as rand
 from .messages import pat_msg, self_pat_msg
 from .messages import cuddle_msg, self_cuddle_msg
 from .messages import slap_msg, self_slap_msg
-from .gifs import pat_gif, cuddle_gif, slap_gif
+from .messages import wave_msg, self_wave_msg
+from .gifs import pat_gif, cuddle_gif, slap_gif, wave_gif
 #Action Imports
 
 from .messages import excited_msg
@@ -43,11 +44,13 @@ class uwu(commands.Cog):
         self.cuddle_msg = cuddle_msg
         self.slap_msg = slap_msg
         self.excited_msg = excited_msg
+        self.wave_msg = wave_msg
         #Messages
         
         self.selfpat_msg = self_pat_msg
         self.selfcuddle_msg = self_cuddle_msg
         self.selfslap_msg = self_slap_msg
+        self.selfwave_msg = self_wave_msg
         #Self Messages
         
         self.clist = clist
@@ -103,6 +106,23 @@ class uwu(commands.Cog):
         else:
             slapbed = discord.Embed(color=discord.Color(rand(self.clist)))
             slapbed.set_image(url=rand(self.slap_gif))
+            slapbed.set_author(name=msg.format(mem=member.display_name, auth=auth.display_name), icon_url=ctx.author.avatar_url)
+            
+            await ctx.send(embed=slapbed)
+        #Slap Command
+        
+    @commands.command()
+    async def slap(self, ctx, member: discord.Member):
+        auth = ctx.author
+        msg = rand(self.wave_msg)
+        self_msg = rand(self.selfwave_msg)
+        
+        if member == ctx.author:
+            return await ctx.send(self_msg.format(auth=auth.display_name))
+        
+        else:
+            slapbed = discord.Embed(color=discord.Color(rand(self.clist)))
+            slapbed.set_image(url=rand(self.wave_gif))
             slapbed.set_author(name=msg.format(mem=member.display_name, auth=auth.display_name), icon_url=ctx.author.avatar_url)
             
             await ctx.send(embed=slapbed)
