@@ -65,6 +65,10 @@ slap_gif = [
     "https://i.imgur.com/MnDJQ3y.gif"
 ]
 
+wave_gif = [
+    "https://i.imgur.com/UX2DyJ1.gif"
+]
+
 #################        
 #Emote Gifs        
 ################# 
