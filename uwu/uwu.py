@@ -15,7 +15,8 @@ from .messages import pat_msg, self_pat_msg
 from .messages import cuddle_msg, self_cuddle_msg
 from .messages import slap_msg, self_slap_msg
 from .messages import wave_msg, self_wave_msg
-from .gifs import pat_gif, cuddle_gif, slap_gif, wave_gif
+from .messages import bang_msg, self_bang_msg
+from .gifs import pat_gif, cuddle_gif, slap_gif, wave_gif, bang_gif
 #Action Imports
 
 from .messages import excited_msg
@@ -39,6 +40,7 @@ class uwu(commands.Cog):
         self.slap_gif = slap_gif
         self.excited_gif = excited_gif
         self.wave_gif = wave_gif
+        self.bang_gif = bang_gif
         #Gifs
 
         self.pat_msg = pat_msg
@@ -46,12 +48,14 @@ class uwu(commands.Cog):
         self.slap_msg = slap_msg
         self.excited_msg = excited_msg
         self.wave_msg = wave_msg
+        self.bang_msg = bang_msg
         #Messages
         
         self.selfpat_msg = self_pat_msg
         self.selfcuddle_msg = self_cuddle_msg
         self.selfslap_msg = self_slap_msg
         self.selfwave_msg = self_wave_msg
+        self.selfbang_msg = self_bang_msg
         #Self Messages
         
         self.clist = clist
@@ -122,13 +126,30 @@ class uwu(commands.Cog):
             return await ctx.send(self_msg.format(auth=auth.display_name))
         
         else:
-            slapbed = discord.Embed(color=discord.Color(rand(self.clist)))
-            slapbed.set_image(url=rand(self.wave_gif))
-            slapbed.set_author(name=msg.format(mem=member.display_name, auth=auth.display_name), icon_url=ctx.author.avatar_url)
+            wavebed = discord.Embed(color=discord.Color(rand(self.clist)))
+            wavebed.set_image(url=rand(self.wave_gif))
+            wavebed.set_author(name=msg.format(mem=member.display_name, auth=auth.display_name), icon_url=ctx.author.avatar_url)
             
-            await ctx.send(embed=slapbed)
+            await ctx.send(embed=wavebed)
         #Wave Command
+    
+    @commands.command()
+    async def wave(self, ctx, member: discord.Member):
+        auth = ctx.author
+        msg = rand(self.bang_msg)
+        self_msg = rand(self.selfbang_msg)
         
+        if member == ctx.author:
+            return await ctx.send(self_msg.format(auth=auth.display_name))
+        
+        else:
+            bangbed = discord.Embed(color=discord.Color(rand(self.clist)))
+            bangbed.set_image(url=rand(self.wave_gif))
+            bangbed.set_author(name=msg.format(mem=member.display_name, auth=auth.display_name), icon_url=ctx.author.avatar_url)
+            
+            await ctx.send(embed=bangbed)
+        #Bang Command
+    
 #################        
 #Emote Commands        
 #################
