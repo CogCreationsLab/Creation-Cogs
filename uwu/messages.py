@@ -5,7 +5,6 @@
 pat_msg = [
     "{auth} pats {mem} on the head ^-^",
     "{auth} pattie cakes {mem}s head 0-0",
-    "{mem} gets a lucky 'ol pat on the head from {auth} UwU",
     "{mem} recieves a pat from {auth} =-=",
 ]
 
@@ -49,7 +48,7 @@ self_wave_msg = [
 bang_msg = [
     "{auth} shot {mem}! Pew! Pew!",
     "{auth} pulls the trigger on {mem}! BANG!!",
-    "{auth} snipes {mem}! Pffft!",
+    "{auth} opened fire at {mem}! oof.",
 ]
     
 self_bang_msg = [
