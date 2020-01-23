@@ -49,7 +49,7 @@ self_wave_msg = [
 bang_msg = [
     "{auth} shot {mem}! Pew! Pew!",
     "{auth} pulls the trigger on {mem}! BANG!!",
-    "{auth} snipes {mem}! pffft!",
+    "{auth} snipes {mem}! Pffft!",
 ]
     
 self_bang_msg = [
