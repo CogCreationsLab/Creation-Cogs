@@ -144,7 +144,7 @@ class uwu(commands.Cog):
         
         else:
             bangbed = discord.Embed(color=discord.Color(rand(self.clist)))
-            bangbed.set_image(url=rand(self.wave_gif))
+            bangbed.set_image(url=rand(self.bang_gif))
             bangbed.set_author(name=msg.format(mem=member.display_name, auth=auth.display_name), icon_url=ctx.author.avatar_url)
             
             await ctx.send(embed=bangbed)
