@@ -38,6 +38,7 @@ class uwu(commands.Cog):
         self.cuddle_gif = cuddle_gif
         self.slap_gif = slap_gif
         self.excited_gif = excited_gif
+        self.wave_gif = wave_gif
         #Gifs
 
         self.pat_msg = pat_msg
