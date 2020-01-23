@@ -46,6 +46,17 @@ self_wave_msg = [
     "Poor {auth}... Do you need friends...?"
 ]
 
+bang_msg = [
+    "{auth} shot {mem}! Pew! Pew!",
+    "{auth} pulls the trigger on {mem}! BANG!!",
+    "{auth} snipes {mem}! pffft!",
+]
+    
+self_bang_msg = [
+    "Don't do that to yourself, {auth}!",
+    "W-why would you shoot yourself {auth}?
+]
+
 #################        
 #Emote Messages        
 ################# 
