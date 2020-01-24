@@ -70,7 +70,24 @@ wave_gif = [
 ]
 
 bang_gif = [
-    "https://i.imgur.com/e1Px88O.gif"
+    "https://i.imgur.com/e1Px88O.gif",
+    "https://i.imgur.com/21O37qj.gif",
+    "https://i.imgur.com/5Um7T43.gif",
+    "https://i.imgur.com/KXKHbUF.gif",
+    "https://i.imgur.com/TqiBvfs.gif",
+    "https://i.imgur.com/ZF5qw83.gif",
+    "https://i.imgur.com/jnE3QkB.gif",
+    "https://i.imgur.com/3OfOHo7.gif",
+    "https://i.imgur.com/mp0HO1W.gif",
+    "https://i.imgur.com/uf0m5x3.gif",
+    "https://i.imgur.com/fi3Gqbg.gif",
+    "https://i.imgur.com/1mqSe3d.gif",
+    "https://i.imgur.com/yfDqElG.gif",
+    "https://i.imgur.com/AibQ3HZ.gif",
+    "https://i.imgur.com/0FT9ycJ.gif",
+    "",
+    "",
+    "" 
 ]
 
 #################        
