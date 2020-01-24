@@ -85,9 +85,9 @@ bang_gif = [
     "https://i.imgur.com/yfDqElG.gif",
     "https://i.imgur.com/AibQ3HZ.gif",
     "https://i.imgur.com/0FT9ycJ.gif",
-    "",
-    "",
-    "" 
+    "https://i.imgur.com/GwoJ76u.gif",
+    "https://i.imgur.com/SXs0x0A.gif",
+    "https://i.imgur.com/vkUg3R4.gif" 
 ]
 
 #################        
