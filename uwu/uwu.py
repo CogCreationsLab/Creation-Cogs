@@ -39,12 +39,15 @@ class uwu(commands.Cog):
         self.pat_gif = pat_gif
         self.cuddle_gif = cuddle_gif
         self.slap_gif = slap_gif
-        self.excited_gif = excited_gif
         self.wave_gif = wave_gif
         self.bang_gif = bang_gif
         self.kill_gif = kill_gif
-        #Gifs
+        #Action Gifs
 
+        self.excited_gif = excited_gif
+        self.happy_gif = happy_gif
+        #Emote GIfs
+        
         self.pat_msg = pat_msg
         self.cuddle_msg = cuddle_msg
         self.slap_msg = slap_msg
@@ -52,7 +55,11 @@ class uwu(commands.Cog):
         self.wave_msg = wave_msg
         self.bang_msg = bang_msg
         self.kill_msg = kill_msg
-        #Messages
+        #Action Messages
+        
+        self.excited_msg = excited_msg
+        self.happy_msg = happy_msg
+        #Emote Messages
         
         self.selfpat_msg = self_pat_msg
         self.selfcuddle_msg = self_cuddle_msg
