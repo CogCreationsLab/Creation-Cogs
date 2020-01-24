@@ -20,8 +20,8 @@ from .messages import kill_msg, self_kill_msg
 from .gifs import pat_gif, cuddle_gif, slap_gif, wave_gif, bang_gif, kill_gif
 #Action Imports
 
-from .messages import excited_msg
-from .gifs import excited_gif
+from .messages import excited_msg, happy_msg
+from .gifs import excited_gif, happy_gif
 #Emote Imports
 
 clist = [
