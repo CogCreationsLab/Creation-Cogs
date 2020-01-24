@@ -201,7 +201,7 @@ class uwu(commands.Cog):
         
         happybed = discord.Embed(color=discord.Color(rand(self.clist)))
         
-        happybed.set_image(url=rand(self.excited_gif))
+        happybed.set_image(url=rand(self.happy_gif))
         happybed.set_author(name=msg.format(auth=auth.display_name), icon_url=ctx.author.avatar_url)
         
         await ctx.send(embed=happybed)
@@ -217,7 +217,7 @@ class uwu(commands.Cog):
 # -Lick
 # -Kill
 # -Punch
-# -Happy
+# -Happy -Done
 # -Excited -Done
 # -Cuddle -Done
 # -Insult
@@ -226,12 +226,10 @@ class uwu(commands.Cog):
 # -Stare
 # -Highfive
 # -Bite
-# -Greet
 # -Handholding
 # -Tickle
 # -Kill
 # -Hold
-# -Wave
+# -Wave -Done
 # -Boop
-# -Snuggle
 # -Bully
