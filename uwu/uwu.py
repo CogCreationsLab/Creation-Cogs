@@ -16,7 +16,8 @@ from .messages import cuddle_msg, self_cuddle_msg
 from .messages import slap_msg, self_slap_msg
 from .messages import wave_msg, self_wave_msg
 from .messages import bang_msg, self_bang_msg
-from .gifs import pat_gif, cuddle_gif, slap_gif, wave_gif, bang_gif
+from .messages import kill_msg, self_kill_msg
+from .gifs import pat_gif, cuddle_gif, slap_gif, wave_gif, bang_gif, kill_gif
 #Action Imports
 
 from .messages import excited_msg
@@ -41,6 +42,7 @@ class uwu(commands.Cog):
         self.excited_gif = excited_gif
         self.wave_gif = wave_gif
         self.bang_gif = bang_gif
+        self.kill_gif = kill_gif
         #Gifs
 
         self.pat_msg = pat_msg
@@ -49,6 +51,7 @@ class uwu(commands.Cog):
         self.excited_msg = excited_msg
         self.wave_msg = wave_msg
         self.bang_msg = bang_msg
+        self.kill_msg = kill_msg
         #Messages
         
         self.selfpat_msg = self_pat_msg
@@ -56,6 +59,7 @@ class uwu(commands.Cog):
         self.selfslap_msg = self_slap_msg
         self.selfwave_msg = self_wave_msg
         self.selfbang_msg = self_bang_msg
+        self.selfkill_msg = self_kill_msg
         #Self Messages
         
         self.clist = clist
@@ -150,6 +154,23 @@ class uwu(commands.Cog):
             await ctx.send(embed=bangbed)
         #Bang Command
     
+    @commands.command()
+    async def kill(self, ctx, member: discord.Member):
+        auth = ctx.author
+        msg = rand(self.kill_msg)
+        self_msg = rand(self.selfkill_msg)
+        
+        if member == ctx.author:
+            return await ctx.send(self_msg.format(auth=auth.display_name))
+        
+        else:
+            killbed = discord.Embed(color=discord.Color(rand(self.clist)))
+            killbed.set_image(url=rand(self.kill_gif))
+            killbed.set_author(name=msg.format(mem=member.display_name, auth=auth.display_name), icon_url=ctx.author.avatar_url)
+            
+            await ctx.send(embed=killbed)
+        #Kill Command
+    
 #################        
 #Emote Commands        
 #################
@@ -165,6 +186,18 @@ class uwu(commands.Cog):
         excitedbed.set_author(name=msg.format(auth=auth.display_name), icon_url=ctx.author.avatar_url)
         
         await ctx.send(embed=excitedbed)
+        
+    @commands.command()
+    async def happy(self, ctx):
+        auth = ctx.author
+        msg = rand(self.happy_msg)
+        
+        happybed = discord.Embed(color=discord.Color(rand(self.clist)))
+        
+        happybed.set_image(url=rand(self.excited_gif))
+        happybed.set_author(name=msg.format(auth=auth.display_name), icon_url=ctx.author.avatar_url)
+        
+        await ctx.send(embed=happybed)
         
 
 ################        
