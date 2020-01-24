@@ -16,7 +16,6 @@ from .messages import cuddle_msg, self_cuddle_msg
 from .messages import slap_msg, self_slap_msg
 from .messages import wave_msg, self_wave_msg
 from .messages import bang_msg, self_bang_msg
-from .messages import kill_msg, self_kill_msg
 from .gifs import pat_gif, cuddle_gif, slap_gif, wave_gif, bang_gif, kill_gif
 #Action Imports
 
