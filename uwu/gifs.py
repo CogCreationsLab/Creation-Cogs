@@ -90,6 +90,10 @@ bang_gif = [
     "https://i.imgur.com/vkUg3R4.gif" 
 ]
 
+kill_gif = [
+    "https://i.imgur.com/kitc5bJ.gif",
+]
+
 #################        
 #Emote Gifs        
 ################# 
