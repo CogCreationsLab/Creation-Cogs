@@ -3,9 +3,9 @@
 ################# 
 
 pat_msg = [
-    "{auth} pats {mem} on the head ^-^",
-    "{auth} pattie cakes {mem}s head 0-0",
-    "{mem} recieves a pat from {auth} =-=",
+    "{auth} pets {mem} on the head! Adorable~",
+    "{auth} pets {mem}s head! There there!",
+    "{auth} pets {mem}! *pat pat*",
 ]
 
 self_pat_msg = [
@@ -65,3 +65,10 @@ excited_msg = [
     "{auth} is jumping in Excitement!",
     "{auth} is overwhelmed with Excitement!!"
 ]
+
+happy_msg = [
+    "{auth} is Happy!",
+    "{auth} has a grin!!",
+    "{auth} smiles! c:"
+]
+
