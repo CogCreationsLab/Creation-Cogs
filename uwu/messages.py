@@ -56,6 +56,15 @@ self_bang_msg = [
     "W-why would you shoot yourself {auth}?"
 ]
 
+kill_msg = [
+    "{auth} kill {mem}! oof.",
+]
+    
+self_kill_msg = [
+    "Don't do that to yourself, {auth}!",
+    "W-why would you kill yourself {auth}?"
+]
+
 #################        
 #Emote Messages        
 ################# 
