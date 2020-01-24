@@ -114,3 +114,24 @@ excited_gif = [
     "https://i.imgur.com/kaujCoX.gif",
     "https://i.imgur.com/jiQCMNM.gif"
 ]
+
+happy_gif = [
+    "https://i.imgur.com/prSiaCX.gif",
+    "https://i.imgur.com/n5Heogr.gif",
+    "https://i.imgur.com/zUSxhiO.gif",
+    "https://i.imgur.com/carDSbH.gif",
+    "https://i.imgur.com/dYs66t0.gif",
+    "https://i.imgur.com/YBlykT9.gif",
+    "https://i.imgur.com/pGmMBlc.gif",
+    "https://i.imgur.com/FXfQE4K.gif",
+    "https://i.imgur.com/KVT8C5Y.gif",
+    "https://i.imgur.com/1dYYnQ7.gif",
+    "https://i.imgur.com/6VCVqE5.gif",
+    "https://i.imgur.com/qjctKWn.gif",
+    "https://i.imgur.com/cdLZ7qW.gif",
+    "https://i.imgur.com/PUIHSSH.gif",
+    "https://i.imgur.com/qaywXEz.gif",
+    "https://i.imgur.com/Vovdd2Y.gif",
+    "https://i.imgur.com/vxbjEW5.gif",
+    "https://i.imgur.com/L2cEKR8.gif"
+]
