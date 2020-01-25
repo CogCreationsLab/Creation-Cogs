@@ -21,7 +21,7 @@ from .messages import kiss_msg, self_kiss_msg
 #Action Message Imports
 
 from .gifs import pat_gif, cuddle_gif, slap_gif
-from .gifs import wave_gif, bang_gif, kill_gif kiss_gif
+from .gifs import wave_gif, bang_gif, kill_gif
 from .gifs import kiss_gif
 #Action Gif Imports
 
