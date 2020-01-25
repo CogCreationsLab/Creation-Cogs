@@ -57,12 +57,14 @@ self_bang_msg = [
 ]
 
 kill_msg = [
-    "{auth} kill {mem}! oof.",
+    "{auth} killed {mem}! Oh my...",
+    "{auth} killed {mem}! oof!",
+    "{auth} killed {mem}! Brutal!"
 ]
     
 self_kill_msg = [
-    "Don't do that to yourself, {auth}!",
-    "W-why would you kill yourself {auth}?"
+    "Lets... not do that, {auth}...",
+    "No... {auth}... nu.... ;-;?"
 ]
 
 #################        
