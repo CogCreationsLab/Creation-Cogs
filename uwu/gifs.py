@@ -3,24 +3,24 @@
 ################# 
 
 pat_gif = [
-    "https://i.imgur.com/YTGnx49.gif",
-    "https://i.imgur.com/U37wHs9.gif",
-    "https://i.imgur.com/BU2IQym.gif",
-    "https://i.imgur.com/yp6kqPI.gif",
-    "https://i.imgur.com/uDyehIe.gif",
-    "https://i.imgur.com/vG8Vuqp.gif",
-    "https://i.imgur.com/z4uCLUt.gif",
-    "https://i.imgur.com/ZIRC9f0.gif",
-    "https://i.imgur.com/s8m4srp.gif",
-    "https://i.imgur.com/LKvNxmo.gif",
-    "https://i.imgur.com/j4W4GFt.gif",
-    "https://i.imgur.com/75bX4A1.gif",
-    "https://i.imgur.com/dSlfpe3.gif",
-    "https://i.imgur.com/JjxaT8e.gif",
-    "https://i.imgur.com/QWBlOaQ.gif",
-    "https://i.imgur.com/5448px6.gif",
-    "https://i.imgur.com/4WJRAGw.gif",
-    "https://i.imgur.com/v1sSh5r.gif"
+    "https://i.imgur.com/RcZoWEF.gif",
+    "https://i.imgur.com/aPCQ27T.gif",
+    "https://i.imgur.com/gXSQnkt.gif",
+    "https://i.imgur.com/UKIaqiD.gif",
+    "https://i.imgur.com/ntRlpWo.gif",
+    "https://i.imgur.com/AcpbQRX.gif",
+    "https://i.imgur.com/zeIHCi6.gif",
+    "https://i.imgur.com/IEgClVt.gif",
+    "https://i.imgur.com/ZW0gy0B.gif",
+    "https://i.imgur.com/0ZPzKAX.gif",
+    "https://i.imgur.com/QWSlbYP.gif",
+    "https://i.imgur.com/TJVmoQG.gif",
+    "https://i.imgur.com/Gy6cTfC.gif",
+    "https://i.imgur.com/unr4GIq.gif",
+    "https://i.imgur.com/c66BJSq.gif",
+    "https://i.imgur.com/TxDLh3s.gif",
+    "https://i.imgur.com/1aeMlBa.gif",
+    "https://i.imgur.com/csTbAiG.gif"
 ]
 
 cuddle_gif = [
@@ -66,7 +66,7 @@ slap_gif = [
 ]
 
 wave_gif = [
-    "https://i.imgur.com/UX2DyJ1.gif"
+    "https://i.imgur.com/UX2DyJ1.gif",
 ]
 
 bang_gif = [
@@ -92,6 +92,23 @@ bang_gif = [
 
 kill_gif = [
     "https://i.imgur.com/kitc5bJ.gif",
+    "https://i.imgur.com/J7pqU5d.gif",
+    "https://i.imgur.com/dP0TSBE.gif",
+    "https://i.imgur.com/sc8ZKLi.gif",
+    "https://i.imgur.com/dawLBJl.gif",
+    "https://i.imgur.com/dYtmVE1.gif",
+    "https://i.imgur.com/FV0mdyM.gif",
+    "https://i.imgur.com/ScwB9ba.gif",
+    "https://i.imgur.com/qC5NhPo.gif",
+    "https://i.imgur.com/ZpkqyaF.gif",
+    "https://i.imgur.com/ZGGC4uY.gif",
+    "https://i.imgur.com/WaJdsqj.gif",
+    "https://i.imgur.com/WaKAYrO.gif",
+    "https://i.imgur.com/HOZEiJ2.gif",
+    "https://i.imgur.com/reImKgN.gif",
+    "https://i.imgur.com/jhN3Sl6.gif",
+    "https://i.imgur.com/mJRbtXY.gif",
+    "https://i.imgur.com/1PnOqfI.gif"
 ]
 
 #################        
@@ -131,11 +148,13 @@ happy_gif = [
     "https://i.imgur.com/KVT8C5Y.gif",
     "https://i.imgur.com/1dYYnQ7.gif",
     "https://i.imgur.com/6VCVqE5.gif",
-    "https://i.imgur.com/qjctKWn.gif",
+    "https://i.imgur.com/trfdAt8.gif",
     "https://i.imgur.com/cdLZ7qW.gif",
     "https://i.imgur.com/PUIHSSH.gif",
-    "https://i.imgur.com/qaywXEz.gif",
-    "https://i.imgur.com/Vovdd2Y.gif",
+    "https://i.imgur.com/jvGgUqC.gif",
+    "https://i.imgur.com/nYaxuTP.gif",
     "https://i.imgur.com/vxbjEW5.gif",
     "https://i.imgur.com/L2cEKR8.gif"
 ]
+
+
