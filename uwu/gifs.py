@@ -111,6 +111,10 @@ kill_gif = [
     "https://i.imgur.com/1PnOqfI.gif"
 ]
 
+kiss_gif = [
+    "https://i.imgur.com/t3rdifu.gif",
+]
+
 #################        
 #Emote Gifs        
 ################# 
