@@ -67,6 +67,14 @@ self_kill_msg = [
     "No... {auth}... nu.... ;-;?"
 ]
 
+kiss_msg = [
+    "{auth} kissed {mem}! Oh my...",
+]
+    
+self_kiss_msg = [
+    "Lets... not do that, {auth}..."
+]
+
 #################        
 #Emote Messages        
 ################# 
