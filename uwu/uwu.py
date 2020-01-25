@@ -17,12 +17,19 @@ from .messages import slap_msg, self_slap_msg
 from .messages import wave_msg, self_wave_msg
 from .messages import bang_msg, self_bang_msg
 from .messages import kill_msg, self_kill_msg
-from .gifs import pat_gif, cuddle_gif, slap_gif, wave_gif, bang_gif, kill_gif
-#Action Imports
+from .messages import kiss_msg, self_kiss_msg
+#Action Message Imports
+
+from .gifs import pat_gif, cuddle_gif, slap_gif
+from .gifs import wave_gif, bang_gif, kill_gif kiss_gif
+from .gifs import kiss_gif
+#Action Gif Imports
 
 from .messages import excited_msg, happy_msg
+#Emote Message Imports
+
 from .gifs import excited_gif, happy_gif
-#Emote Imports
+#Emote Gif Imports
 
 clist = [
     0xeb4034,
@@ -42,11 +49,12 @@ class uwu(commands.Cog):
         self.wave_gif = wave_gif
         self.bang_gif = bang_gif
         self.kill_gif = kill_gif
+        self.kiss_gif = kiss_gif
         #Action Gifs
 
         self.excited_gif = excited_gif
         self.happy_gif = happy_gif
-        #Emote GIfs
+        #Emote Gifs
         
         self.pat_msg = pat_msg
         self.cuddle_msg = cuddle_msg
@@ -55,6 +63,7 @@ class uwu(commands.Cog):
         self.wave_msg = wave_msg
         self.bang_msg = bang_msg
         self.kill_msg = kill_msg
+        self.kiss_msg = kiss_msg
         #Action Messages
         
         self.excited_msg = excited_msg
@@ -67,6 +76,7 @@ class uwu(commands.Cog):
         self.selfwave_msg = self_wave_msg
         self.selfbang_msg = self_bang_msg
         self.selfkill_msg = self_kill_msg
+        self.selfkiss_msg = self_kiss_msg
         #Self Messages
         
         self.clist = clist
@@ -177,6 +187,23 @@ class uwu(commands.Cog):
             
             await ctx.send(embed=killbed)
         #Kill Command
+    
+    @commands.command()
+    async def kiss(self, ctx, member: discord.Member):
+        auth = ctx.author
+        msg = rand(self.kiss_msg)
+        self_msg = rand(self.selfkiss_msg)
+        
+        if member == ctx.author:
+            return await ctx.send(self_msg.format(auth=auth.display_name))
+        
+        else:
+            kissbed = discord.Embed(color=discord.Color(rand(self.clist)))
+            kissbed.set_image(url=rand(self.kiss_gif))
+            kissbed.set_author(name=msg.format(mem=member.display_name, auth=auth.display_name), icon_url=ctx.author.avatar_url)
+            
+            await ctx.send(embed=kissbed)
+        #Kiss Command
     
 #################        
 #Emote Commands        
