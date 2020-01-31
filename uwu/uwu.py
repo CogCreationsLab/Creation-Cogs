@@ -211,7 +211,7 @@ class uwu(commands.Cog):
         msg = rand(self.kiss_msg)
         self_msg = rand(self.selfkiss_msg)
         
-        if member == none:
+        if member == a:
             smilebed = discord.Embed(color=discord.Color(rand(self.clist)))
             smilebed.set_image(url=rand(self.kiss_gif))
             smilebed.set_author(name=msg.format(mem=member.display_name, auth=auth.display_name), icon_url=ctx.author.avatar_url)
