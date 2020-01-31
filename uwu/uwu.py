@@ -206,7 +206,7 @@ class uwu(commands.Cog):
         #Kiss Command
     
     @commands.command()
-    async def smile(self, ctx, member):
+    async def smile(self, ctx):
         auth = ctx.author
         msg = rand(self.kiss_msg)
         self_msg = rand(self.selfkiss_msg)
