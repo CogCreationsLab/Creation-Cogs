@@ -205,6 +205,25 @@ class uwu(commands.Cog):
             await ctx.send(embed=kissbed)
         #Kiss Command
     
+    @commands.command()
+    async def smile(self, ctx, member: discord.Member):
+        auth = ctx.author
+        msg = rand(self.kiss_msg)
+        self_msg = rand(self.selfkiss_msg)
+        
+        if member == ctx.member:
+            smilebed = discord.Embed(color=discord.Color(rand(self.clist)))
+            smilebed.set_image(url=rand(self.kiss_gif))
+            smilebed.set_author(name=msg.format(mem=member.display_name, auth=auth.display_name), icon_url=ctx.author.avatar_url)
+        
+        else:
+            smilebed = discord.Embed(color=discord.Color(rand(self.clist)))
+            smilebed.set_image(url=rand(self.kiss_gif))
+            smilebed.set_author(name=self_msg.format(mem=member.display_name, auth=auth.display_name), icon_url=ctx.author.avatar_url)
+            
+            await ctx.send(embed=smilebed)
+        #Kiss Command
+    
 #################        
 #Emote Commands        
 #################
