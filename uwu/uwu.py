@@ -87,7 +87,7 @@ class uwu(commands.Cog):
 #################        
         
     @commands.command()
-    async def pat(self, ctx, member: discord.Member):
+    async def pat(self, ctx, member):
         auth = ctx.author
         msg = rand(self.pat_msg)
         self_msg = rand(self.selfpat_msg)
