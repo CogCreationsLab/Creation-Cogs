@@ -35,16 +35,6 @@ self_slap_msg = [
     "Did you... slap yourself, {auth}?? :c"
 ]
 
-wave_msg = [
-    "{auth} says hi to {mem}!",
-    "{auth} waves at {mem}",
-    "{auth} says hello to {mem}",
-]
-    
-self_wave_msg = [
-    "Poor {auth}... Do you need friends...?"
-]
-
 bang_msg = [
     "{auth} shot {mem}! Pew! Pew!",
     "{auth} pulls the trigger on {mem}! BANG!!",
@@ -101,7 +91,9 @@ happy_msg = [
 ################# 
 
 wave_msg = [
-    "{auth} says hi to {mem}!"
+    "{auth} says hi to {mem}!",
+    "{auth} waves at {mem}",
+    "{auth} says hello to {mem}",
 ]
 
 ae_wave_msg = [
