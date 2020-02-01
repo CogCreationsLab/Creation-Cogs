@@ -97,5 +97,6 @@ wave_msg = [
 ]
 
 ae_wave_msg = [
-    "{auth} says hi!"
+    "{auth} says hi!",
+    "{auth} says hello"
 ]
