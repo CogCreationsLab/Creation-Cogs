@@ -237,11 +237,11 @@ class uwu(commands.Cog):
         msg = rand(self.wave_msg)
         self_msg = rand(self.selfwave_msg)
            
-            wavebed = discord.Embed(color=discord.Color(rand(self.clist)))
-            wavebed.set_image(url=rand(self.wave_gif))
-            wavebed.set_author(name=self_msg.format(auth=auth.display_name), icon_url=ctx.author.avatar_url)
+        wavebed = discord.Embed(color=discord.Color(rand(self.clist)))
+        wavebed.set_image(url=rand(self.wave_gif))
+        wavebed.set_author(name=self_msg.format(auth=auth.display_name), icon_url=ctx.author.avatar_url)
         
-            await ctx.send(embed=wavebed)
+        await ctx.send(embed=wavebed)
             
         if member:
             wavebed = discord.Embed(color=discord.Color(rand(self.clist)))
