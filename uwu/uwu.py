@@ -11,7 +11,8 @@ import time
 from random import choice as rand
 #General Imports
 
-from .messages import pat_msg, self_pat_msg
+from .messages import 
+pat_msg, self_pat_msg,
 cuddle_msg, self_cuddle_msg,
 slap_msg, self_slap_msg,
 wave_msg, self_wave_msg,
