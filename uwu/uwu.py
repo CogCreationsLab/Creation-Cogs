@@ -149,23 +149,6 @@ class uwu(commands.Cog):
         #Slap Command
         
     @commands.command()
-    async def wave(self, ctx, member: discord.Member):
-        auth = ctx.author
-        msg = rand(self.wave_msg)
-        self_msg = rand(self.selfwave_msg)
-        
-        if member == ctx.author:
-            return await ctx.send(self_msg.format(auth=auth.display_name))
-        
-        else:
-            wavebed = discord.Embed(color=discord.Color(rand(self.clist)))
-            wavebed.set_image(url=rand(self.wave_gif))
-            wavebed.set_author(name=msg.format(mem=member.display_name, auth=auth.display_name), icon_url=ctx.author.avatar_url)
-            
-            await ctx.send(embed=wavebed)
-        #Wave Command
-    
-    @commands.command()
     async def bang(self, ctx, member: discord.Member):
         auth = ctx.author
         msg = rand(self.bang_msg)
@@ -253,8 +236,7 @@ class uwu(commands.Cog):
         auth = ctx.author
         msg = rand(self.wave_msg)
         self_msg = rand(self.selfwave_msg)
-        
-        if member == ctx.author:    
+           
             wavebed = discord.Embed(color=discord.Color(rand(self.clist)))
             wavebed.set_image(url=rand(self.wave_gif))
             wavebed.set_author(name=self_msg.format(auth=auth.display_name), icon_url=ctx.author.avatar_url)
