@@ -12,12 +12,12 @@ from random import choice as rand
 #General Imports
 
 from .messages import pat_msg, self_pat_msg
-from .messages import cuddle_msg, self_cuddle_msg
-from .messages import slap_msg, self_slap_msg
-from .messages import wave_msg, self_wave_msg
-from .messages import bang_msg, self_bang_msg
-from .messages import kill_msg, self_kill_msg
-from .messages import kiss_msg, self_kiss_msg
+cuddle_msg, self_cuddle_msg,
+slap_msg, self_slap_msg,
+wave_msg, self_wave_msg,
+bang_msg, self_bang_msg,
+kill_msg, self_kill_msg,
+kiss_msg, self_kiss_msg
 #Action Message Imports
 
 from .gifs import pat_gif, cuddle_gif, slap_gif
@@ -87,7 +87,7 @@ class uwu(commands.Cog):
 #################        
         
     @commands.command()
-    async def pat(self, ctx, member):
+    async def pat(self, ctx, member: discord.Member):
         auth = ctx.author
         msg = rand(self.pat_msg)
         self_msg = rand(self.selfpat_msg)
