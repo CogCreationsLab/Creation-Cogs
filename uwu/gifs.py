@@ -192,7 +192,7 @@ wave_gif = [
     "https://i.imgur.com/M6w5ztK.gif",
     "https://i.imgur.com/CGpFTsl.gif",
     "https://i.imgur.com/OdV3pOz.gif",
-    "https://i.imgur.com/eeazlMi.gif",
+    "https://i.imgur.com/xSbpZop.gif",
     "https://i.imgur.com/OxE8AZi.gif",
     "https://i.imgur.com/H1N2mjK.gif",
     "https://i.imgur.com/or6sSRM.gif",
