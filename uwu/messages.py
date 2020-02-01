@@ -101,7 +101,7 @@ happy_msg = [
 ################# 
 
 wave_msg = [
-    "{auth} says hi to {mem}!
+    "{auth} says hi to {mem}!"
 ]
 
 ae_wave_msg = [
