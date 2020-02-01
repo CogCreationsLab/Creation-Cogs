@@ -11,15 +11,13 @@ import time
 from random import choice as rand
 #General Imports
 
-from .messages import = [
-    pat_msg, self_pat_msg,
-    cuddle_msg, self_cuddle_msg,
-    slap_msg, self_slap_msg,
-    wave_msg, self_wave_msg,
-    bang_msg, self_bang_msg,
-    kill_msg, self_kill_msg,
-    kiss_msg, self_kiss_msg
-]
+from .messages import pat_msg, self_pat_msg
+from .messages import cuddle_msg, self_cuddle_msg
+from .messages import slap_msg, self_slap_msg
+from .messages import wave_msg, self_wave_msg
+from .messages import bang_msg, self_bang_msg
+from .messages import kill_msg, self_kill_msg
+from .messages import kiss_msg, self_kiss_msg
 #Action Message Imports
 
 from .gifs import pat_gif, cuddle_gif, slap_gif
@@ -56,6 +54,7 @@ class uwu(commands.Cog):
 
         self.excited_gif = excited_gif
         self.happy_gif = happy_gif
+        self.wave_gif = wave_gif
         #Emote Gifs
         
         self.pat_msg = pat_msg
@@ -66,11 +65,15 @@ class uwu(commands.Cog):
         self.bang_msg = bang_msg
         self.kill_msg = kill_msg
         self.kiss_msg = kiss_msg
+        self.wave_msg = wave_msg
         #Action Messages
         
         self.excited_msg = excited_msg
         self.happy_msg = happy_msg
         #Emote Messages
+        
+        self.wave_msg = ae_wave_msg
+        #Action+Emote Messages
         
         self.selfpat_msg = self_pat_msg
         self.selfcuddle_msg = self_cuddle_msg
@@ -207,8 +210,6 @@ class uwu(commands.Cog):
             await ctx.send(embed=kissbed)
         #Kiss Command
     
-
-    
 #################        
 #Emote Commands        
 #################
@@ -237,7 +238,30 @@ class uwu(commands.Cog):
         
         await ctx.send(embed=happybed)
         
-
+#################        
+#Action+Emote Commands        
+#################     
+        
+    @commands.command()
+    async def wave(self, ctx, user: discord.Member=None):
+        auth = ctx.author
+        msg = rand(self.wave_msg)
+        self_msg = rand(self.selfwave_msg)
+        
+            wavebed = discord.Embed(color=discord.Color(rand(self.clist)))
+            wavebed.set_image(url=rand(self.kiss_gif))
+            wavebed.set_author(name=self_msg.format(auth=auth.display_name), icon_url=ctx.author.avatar_url)
+            
+            await ctx.send(embed=wavebed)
+            
+        if user:
+            wavebed = discord.Embed(color=discord.Color(rand(self.clist)))
+            wavebed.set_image(url=rand(self.kiss_gif))
+            wavebed.set_author(name=msg.format(mem=member.display_name, auth=auth.display_name), icon_url=ctx.author.avatar_url)
+            
+            await ctx.send(embed=wavebed)
+       
+        
 ################        
 #Commands To Add#
 ################
