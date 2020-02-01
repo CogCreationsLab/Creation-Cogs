@@ -252,7 +252,7 @@ class uwu(commands.Cog):
     async def wave(self, ctx, user: discord.Member=None):
         auth = ctx.author
         msg = rand(self.wave_msg)
-        self_msg = rand(self.wave_msg)
+        self_msg = rand(self.selfwave_msg)
         
         wavebed = discord.Embed(color=discord.Color(rand(self.clist)))
         wavebed.set_image(url=rand(self.wave_gif))
