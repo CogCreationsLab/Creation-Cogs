@@ -31,6 +31,12 @@ from .messages import excited_msg, happy_msg
 from .gifs import excited_gif, happy_gif
 #Emote Gif Imports
 
+from .gifs import wave_gif
+#Action+Emote Gif Imports
+
+from .messages import wave_msg, ae_wave_msg
+#Action+Emote Messages Imports
+
 clist = [
     0xeb4034,
     0x75f6ff,
@@ -54,8 +60,10 @@ class uwu(commands.Cog):
 
         self.excited_gif = excited_gif
         self.happy_gif = happy_gif
-        self.wave_gif = wave_gif
         #Emote Gifs
+        
+        self.wave_gif = wave_gif
+        #Action+Emote Gifs
         
         self.pat_msg = pat_msg
         self.cuddle_msg = cuddle_msg
@@ -65,7 +73,6 @@ class uwu(commands.Cog):
         self.bang_msg = bang_msg
         self.kill_msg = kill_msg
         self.kiss_msg = kiss_msg
-        self.wave_msg = wave_msg
         #Action Messages
         
         self.excited_msg = excited_msg
