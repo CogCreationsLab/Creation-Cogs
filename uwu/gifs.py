@@ -65,10 +65,6 @@ slap_gif = [
     "https://i.imgur.com/MnDJQ3y.gif"
 ]
 
-wave_gif = [
-    "https://i.imgur.com/UX2DyJ1.gif",
-]
-
 bang_gif = [
     "https://i.imgur.com/e1Px88O.gif",
     "https://i.imgur.com/21O37qj.gif",
@@ -178,4 +174,27 @@ happy_gif = [
     "https://i.imgur.com/L2cEKR8.gif"
 ]
 
+#################        
+#Action+Emote Gifs       
+################# 
 
+wave_gif = [
+    "https://i.imgur.com/UX2DyJ1.gif",
+    "https://i.imgur.com/sn2PGjr.gif",
+    "https://i.imgur.com/FPyptir.gif",
+    "https://i.imgur.com/Ltzq4Kz.gif",
+    "https://i.imgur.com/aYbXA4I.gif",
+    "https://i.imgur.com/ygFFayN.gif",
+    "https://i.imgur.com/bKXmFzm.gif",
+    "https://i.imgur.com/la82654.gif",
+    "https://i.imgur.com/fy0PkoN.gif",
+    "https://i.imgur.com/9xx9dV0.gif",
+    "https://i.imgur.com/M6w5ztK.gif",
+    "https://i.imgur.com/CGpFTsl.gif",
+    "https://i.imgur.com/OdV3pOz.gif",
+    "https://i.imgur.com/eeazlMi.gif",
+    "https://i.imgur.com/OxE8AZi.gif",
+    "https://i.imgur.com/H1N2mjK.gif",
+    "https://i.imgur.com/or6sSRM.gif",
+    "https://i.imgur.com/gGUfDeg.gif",
+]
