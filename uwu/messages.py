@@ -96,3 +96,14 @@ happy_msg = [
     "{auth} smiles! c:"
 ]
 
+#################        
+#Action+Emote Messages        
+################# 
+
+wave_msg = [
+    "{auth} says hi to {mem}!
+]
+
+ae_wave_msg = [
+    "{auth} says hi!"
+]
