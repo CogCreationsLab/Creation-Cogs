@@ -79,13 +79,13 @@ class uwu(commands.Cog):
         self.happy_msg = happy_msg
         #Emote Messages
         
-        self.wave_msg = ae_wave_msg
+        self.wave_msg = wave_msg
+        self.selfwave_msg = ae_wave_msg
         #Action+Emote Messages
         
         self.selfpat_msg = self_pat_msg
         self.selfcuddle_msg = self_cuddle_msg
         self.selfslap_msg = self_slap_msg
-        self.selfwave_msg = self_wave_msg
         self.selfbang_msg = self_bang_msg
         self.selfkill_msg = self_kill_msg
         self.selfkiss_msg = self_kiss_msg
@@ -253,7 +253,7 @@ class uwu(commands.Cog):
     async def wave(self, ctx, member: discord.Member=None):
         auth = ctx.author
         msg = rand(self.wave_msg)
-        self_msg = rand(self.selfwave_msg)
+        self_msg = rand(self.wave_msg)
         
         wavebed = discord.Embed(color=discord.Color(rand(self.clist)))
         wavebed.set_image(url=rand(self.kiss_gif))
