@@ -232,7 +232,7 @@ class uwu(commands.Cog):
 #################     
         
     @commands.command()
-    async def wave(self, ctx, member: discord.Member=None):
+    async def wave(self, ctx, user: discord.Member=None):
         auth = ctx.author
         msg = rand(self.wave_msg)
         self_msg = rand(self.selfwave_msg)
@@ -243,7 +243,7 @@ class uwu(commands.Cog):
         
         await ctx.send(embed=wavebed)
             
-        if member == ctx.author:
+        if user == ctx.author:
             wavebed = discord.Embed(color=discord.Color(rand(self.clist)))
             wavebed.set_image(url=rand(self.wave_gif))
             wavebed.set_author(name=msg.format(auth=auth.display_name), icon_url=ctx.author.avatar_url)
