@@ -14,7 +14,6 @@ from random import choice as rand
 from .messages import pat_msg, self_pat_msg
 from .messages import cuddle_msg, self_cuddle_msg
 from .messages import slap_msg, self_slap_msg
-from .messages import wave_msg, self_wave_msg
 from .messages import bang_msg, self_bang_msg
 from .messages import kill_msg, self_kill_msg
 from .messages import kiss_msg, self_kiss_msg
